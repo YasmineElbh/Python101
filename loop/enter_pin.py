@@ -18,7 +18,7 @@ while guess != 6 and tries < 3:
     print(int(input('guess the number! ')))
     tries = tries + 1
 
-if guess != 6 and tries == 3:
+if guess != 6 and tries:
     print('you ran out of tries')
 else:
     print('bravo! you got it')
