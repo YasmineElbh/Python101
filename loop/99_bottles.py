@@ -1,5 +1,6 @@
-for x in range(0, 3):
-    print("We're on time %d" % (x))
-
-    mylist = ['a', 'b', 'c', 'd']
-for i in range(len(mylist)):
+for x in range(99, 0, -1):
+    
+    print(f'{x} bottles of beer on the wall')
+    print(f'{x} bottles of beer')
+    print('take one down pass it around')
+    print(f'{x-1} bottles of beer on the wall')
