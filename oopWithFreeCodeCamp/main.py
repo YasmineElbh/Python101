@@ -7,8 +7,8 @@ class item:
         self.name = name
         self.price = price
         self.quantity = quantity
-    def Calculates_total_price(self, x, y):
-        return x * y
+    def Calculates_total_price(self):
+        return self.price * self.quantity
 
 
 item1 = item("sams", 100, 5)
