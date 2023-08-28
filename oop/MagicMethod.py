@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -22,8 +25,12 @@ class Vector:
     #representing
     def __repr__(self):
         return f"X: {self.x}, Y: {self.y}" 
-    
+
+    def __call__(self):
+        print("Hello i was called!")
+
 v1 = Vector(10, 10)
 v2 = Vector(40, 40)
 v3 = v1 + v2
 print(v3)
+v3()
