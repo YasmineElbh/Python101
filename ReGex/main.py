@@ -74,3 +74,13 @@ print(result.group())
 #^ = matches the start of string
 result = re.search(r'b\w+', 'fooobar')
 print(result.group())
+
+#using pattern r'\w+@\w+'
+str = 'purple alice=b@google.com monkey'
+match = re.search(r'\w+@w+', str)
+if match:
+    print(match.group())
+
+match = re.search(r'[\w.-]+@[\w.-]+', str)
+if match:
+    print(match.group())
