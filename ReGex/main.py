@@ -62,4 +62,15 @@ if result:
     print(result.group())
 
 #\s* = zero or more whitespace chars, ##here look for 3 digits, possibly separted y whitespace
-result = re.search(r'\d\s')
+result = re.search(r'\d\s*\d\s*\d', 'xx1 2    3xx')
+print(result.group())
+
+result = re.search(r'\d\s*\d\s*\d', 'xx12    3xx')
+print(result.group())
+
+result = re.search(r'\d\s*\d\s*\d', 'xx123xx')
+print(result.group())
+
+#^ = matches the start of string
+result = re.search(r'b\w+', 'fooobar')
+print(result.group())
