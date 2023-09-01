@@ -1,8 +1,9 @@
+#instance attribut
 #assert: is a statement keyword that is used t chec if there is a match between what is happening to your expectations
 class item:
     def __init__(self, name: str, price: float, quantity = 0):
         #Run validation to the received argument
-        assert price >= 0
+        assert price >= 0, f'price{price} is not greater than zero'
         assert quantity >= 0
         
         #Assign to self object
