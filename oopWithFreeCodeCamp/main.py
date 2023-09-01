@@ -1,5 +1,6 @@
 #methods: mean two functio that are inside the classes
 #__init__:is a method with a unique name that you need to call it the way it is intentionally in order to use its special futures
+#self: allow to assign the attributes from the init method
 
 class item:
     def __init__(self, name, price, quantity):
