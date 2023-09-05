@@ -30,7 +30,7 @@ class item:
     #receive parameter that will be passed as the instance itself
     @classmethod
     def instantiate_from_csv(cls):  # v 
-        with open('items.csv', 'r') as f: #f:fieldsname
+        with open('items.csv', 'r') as f:  #f:fieldsname
             reader = csv.DictReader(f) #this method should read the conteent as a list of dictionaries
             items = list(reader) #convert reader to list
 
